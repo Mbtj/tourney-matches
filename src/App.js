@@ -1,6 +1,8 @@
 import "./App.css";
 import PlayerList from "./components/PlayerList";
 import MatchList from "./components/MatchList";
+import playerData from "./data/playerData";
+import matchData from "./data/matchData";
 
 function App() {
   return (
@@ -9,8 +11,8 @@ function App() {
         Tourney Matches{" "}
         <span>Where Coding and Tournaments found their Match!</span>
       </h1>
-      <PlayerList />
-      <MatchList />
+      <PlayerList {...playerData}/>
+      <MatchList {...matchData}/>
     </div>
   );
 }
